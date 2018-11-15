@@ -1,0 +1,312 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import "../libs/magnific-popup/dist/magnific-popup.css";
+@import "../libs/owl.carousel/dist/assets/owl.carousel.min.css";
+@import "../libs/owl.carousel/dist/assets/owl.theme.default.min.css";
+@import "../libs/slick-carousel/slick/slick.css";
+@import "../libs/animate/animate.min.css";
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTSans-Regular.eot');
+    src: local('PT Sans'), local('PTSans-Regular'),
+    url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSans-Regular.woff') format('woff'),
+    url('../fonts/PTSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Book Alt';
+    src: url('../fonts/Intro-Book-Alt.eot');
+    src: local('Intro Book Alt'), local('Intro-Book-Alt'),
+    url('../fonts/Intro-Book-Alt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Book-Alt.woff') format('woff'),
+    url('../fonts/Intro-Book-Alt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Regular.eot');
+    src: local('Intro Regular'), local('Intro-Regular'),
+    url('../fonts/Intro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Regular.woff') format('woff'),
+    url('../fonts/Intro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Black';
+    src: url('../fonts/Intro-Black.eot');
+    src: local('Intro Black'), local('Intro-Black'),
+    url('../fonts/Intro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Black.woff') format('woff'),
+    url('../fonts/Intro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Bold';
+    src: url('../fonts/Intro-Bold.eot');
+    src: local('Intro Bold'), local('Intro-Bold-Italic'),
+    url('../fonts/Intro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Bold.woff') format('woff'),
+    url('../fonts/Intro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Light';
+    src: url('../fonts/Intro-Light.eot');
+    src: local('Intro Light'), local('Intro-Light'),
+    url('../fonts/Intro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Light.woff') format('woff'),
+    url('../fonts/Intro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro Black Inline';
+    src: url('../fonts/Intro-Black-Inline.eot');
+    src: local('Intro Black Inline'), local('Intro-Black-Inline'),
+    url('../fonts/Intro-Black-Inline.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Black-Inline.woff') format('woff'),
+    url('../fonts/Intro-Black-Inline.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Bold.eot');
+    src: local('Intro Bold'), local('Intro-Bold'),
+    url('../fonts/Intro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Bold.woff') format('woff'),
+    url('../fonts/Intro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Black.eot');
+    src: local('Intro Black'), local('Intro-Black'),
+    url('../fonts/Intro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Black.woff') format('woff'),
+    url('../fonts/Intro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Intro Book';
+    src: url('../fonts/Intro-Book.eot');
+    src: local('Intro Book'), local('Intro-Book'),
+    url('../fonts/Intro-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Book.woff') format('woff'),
+    url('../fonts/Intro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('../fonts/Intro-Thin.eot');
+    src: local('Intro Thin'), local('Intro-Thin'),
+    url('../fonts/Intro-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Intro-Thin.woff') format('woff'),
+    url('../fonts/Intro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+form, a, input,label{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+:after,
+:before,
+:hover {
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input,
+textarea,
+select {
+    outline-offset: 0;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+::-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+:-moz-placeholder {
+    color: inherit;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+:-ms-input-placeholder {
+    color: inherit;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    margin-right: 0 !important;
+}
+
+body {
+    font-size: 1.8rem;
+    background: #fdfeff;
+    color: #2e3745;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Intro';
+    text-rendering: optimizeLegibility;
+    text-decoration-skip: objects;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ptsans {
+    font-family: 'PT Sans';
+}
+.opensans{
+    font-family: 'Open Sans';
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden, .desc-none {
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.white{
+    color: #fff!important;
+}
+.gray{
+    color: #ebebeb!important;
+}
+
+/*********************** MOBILE ***************************/
+
+@media only screen and (max-width: 767px) {
+
+    html {
+        font-size: 42%;
+    }
+    .container {
+        max-width:100%;
+        padding: 0 15px;
+    }
+    .mobile-none{
+        display: none!important;
+    }
+
+}
+@media (any-pointer: fine) {
+    /*
+      These rules will be applied to not-touchscreen devices
+    */
+}
+
+@media (any-pointer: coarse) {
+    /*
+      These rules will be applied to touchscreen devices only
+    */
+}
